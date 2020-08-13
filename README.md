@@ -1,4 +1,4 @@
-# Unsupervised-Learning-Segmenting-Credit-Card-Users
+### Unsupervised-Learning-Segmenting-Credit-Card-Users
 Data segmentation is a technique used to divide a population into groups based on shared behavior or demographics. Here the segmentation consists of an 
 unsupervised learning algorithm that is used to divide customers for a credit card company into specifics group and to extract insights members 
 of each group share in common.
