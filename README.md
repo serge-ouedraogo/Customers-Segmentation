@@ -1,10 +1,10 @@
-### Unsupervised-Learning-Segmenting-Credit-Card-Users
+#### Unsupervised-Learning-Segmenting-Credit-Card-Users
 Data segmentation is a technique used to divide a population into groups based on shared behavior or demographics. Here the segmentation consists of an 
 unsupervised learning algorithm that is used to divide customers for a credit card company into specifics group and to extract insights members 
 of each group share in common.
 
 The main steps include: 
-#### I Data Inspection
+##### I Data Inspection
   Missing values
 ````
 def missing_value(df):
@@ -13,7 +13,7 @@ def missing_value(df):
     if df[i].isnull().sum()>0:
       df[i].fillna(df[i].mode()[0],inplace=True)
   `````
-  #### II Data Exploration
+  ##### II Data Exploration
   1. Identification of correlated features
   
   2. Detection and Removal of Outliers
@@ -28,7 +28,7 @@ def outlier(df,columns):
         ...
 
   ````
-#### III Data Preprocessing 
+##### III Data Preprocessing 
   1. Feature Selection: Removing features with low variance
   ```
   def variance_threshold_selector(df, col):
@@ -52,7 +52,7 @@ def outlier(df,columns):
     ...
    ````
    
-   #### IV Data Clustering using Gaussian Mixture Model
+   ##### IV Data Clustering using Gaussian Mixture Model
   ````
 from sklearn.mixture import GaussianMixture
 from sklearn.metrics import silhouette_score
